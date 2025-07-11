@@ -7,7 +7,8 @@
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f0f4f1; color: #2f4f2f; line-height: 1.6; }
         header { text-align: center; padding: 40px 20px; background-color: #2f4f2f; color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .profile-img { width: 200px; height: 200px; border-radius: 50%; border: 5px solid white; margin: 0 auto 20px; object-fit: cover; }
+        .profile-img { width: 200px; height: 200px; border-radius: 50%; border: 5px solid white; margin: 0 auto 20px; object-fit: cover; display: block; }
+        .my-name-below-img { font-size: 1.5em; color: #d3e0d2; margin-top: 10px; margin-bottom: 0; }
         nav { background-color: #355e3b; padding: 15px; text-align: center; }
         nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; transition: color 0.3s; }
         nav a:hover { color: #d3e0d2; }
@@ -15,6 +16,7 @@
         #home { background-color: #e8f0e9; }
         #resume { background-color: #e8f0e9; }
         #projects { background-color: #e8f0e9; }
+        #lab-challenges { background-color: #e8f0e9; }
         #certificates { background-color: #e8f0e9; }
         #contact { background-color: #e8f0e9; }
         h1 { color: #2f4f2f; font-size: 2.5em; margin: 0; }
@@ -35,20 +37,21 @@
 <body>
     <header>
         <img src="https://github.com/Sharonkamuny/sharon-kamuny/raw/main/profile%201.jpg" alt="Sharon Jepkosgei" class="profile-img">
-        <h1>Sharon Jepkosgei</h1>
+        <div class="my-name-below-img">Sharon Jepkosgei</div>
         <p class="subtitle">Cybersecurity Professional | Computer Security & Forensics Specialist</p>
     </header>
     <nav>
         <a href="#home">Home</a>
         <a href="#resume">Resume</a>
         <a href="#projects">Projects</a>
+        <a href="#lab-challenges">Lab Challenges</a>
         <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
     </nav>
     
     <section id="home" class="section">
         <h2>Welcome</h2>
-        <p>A dedicated cybersecurity professional who recently graduated from Meru University of Science and Technology with BSc. Computer Security and Forensics. I am conversant with network security[...]</p>
+        <p>A dedicated cybersecurity professional who recently graduated from Meru University of Science and Technology with BSc. Computer Security and Forensics. I am conversant with network security, digital forensics, and various emerging technologies in cybersecurity.</p>
     </section>
     
     <section id="resume" class="section">
@@ -117,7 +120,21 @@
         <h2>Projects</h2>
         <div class="project">
             <h3>Credit Card Fraud Detection System</h3>
-            <p>The aim of the project was to detect fraud credit cards and fraudulent transactions in banking and e-business companies. The system used logistic regression algorithm and KNN to determi[...]</p>
+            <p>The aim of the project was to detect fraud credit cards and fraudulent transactions in banking and e-business companies. The system used logistic regression algorithm and KNN to detect fraudulent transactions.</p>
+        </div>
+    </section>
+
+    <!-- Lab Challenges Section (NEW) -->
+    <section id="lab-challenges" class="section">
+        <h2>Lab Challenges</h2>
+        <div class="project">
+            <h3>Fraud Detection Model</h3>
+            <ul>
+                <li><strong>Problem:</strong> Develop a simple credit card fraud detection model.</li>
+                <li><strong>Approach:</strong> Trained a Logistic Regression model on a fraud dataset, addressed data imbalance with oversampling, and evaluated accuracy using a confusion matrix.</li>
+                <li><strong>Tools:</strong> Python.</li>
+                <li><strong>Lessons Learned:</strong> Learned to handle imbalanced data and evaluate model performance effectively.</li>
+            </ul>
         </div>
     </section>
     
